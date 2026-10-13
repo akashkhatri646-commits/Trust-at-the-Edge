@@ -12,31 +12,6 @@ The current application target is **Trust at the Edge** — an agentic health re
 
 ---
 
-## Folder Structure
-
-```
-dev-os/
-├── CLAUDE.md                     # Project instructions & stage-gated workflow rules
-├── docs/
-│   ├── design.md                 # Brand design system (colors, typography, spacing, components)
-│   ├── ContractIQ_PRD.md         # Product Requirements Document for ContractIQ
-├── skills/                       # Claude Code custom skills (slash commands)
-│   ├── engineering-planner/
-│   │   └── SKILL.md              # Stage 1: PRD → engineering docs
-│   ├── implementation-specs/
-│   │   └── SKILL.md              # Stage 2: Engineering docs → granular specs + SQL
-│   ├── security-foundation/
-│   │   └── SKILL.md              # Stage 3: Specs → security controls + RLS policies
-│   ├── frontend-setup/
-│   │   └── SKILL.md              # Stage 4: Scaffold Next.js 14 App Router project
-│   └── design-system/
-│       └── SKILL.md              # Applied during all frontend work — enforces design.md
-```
-
-> Files and folders under `docs/engineering/`, `docs/specs/`, `docs/security/`, and `.env.example` are generated outputs — they are created during the build workflow and do not exist until their respective stage runs.
-
----
-
 ## The Build Workflow
 
 Each stage must be completed and approved before the next begins.
