@@ -1,4 +1,4 @@
-# dev-os
+# dev-os-personal
 
 A structured AI-assisted development operating system for building production-ready apps — from idea to deployed product using a stage-gated workflow enforced through Claude Code skills.
 
@@ -6,9 +6,9 @@ A structured AI-assisted development operating system for building production-re
 
 ## What This Is
 
-`dev-os` is a Claude Code project that provides a repeatable, stage-by-stage workflow for building full-stack web applications. Each stage has a dedicated skill that Claude runs when invoked. No stage begins until the previous one is approved.
+`dev-os-personal` is a Claude Code project that provides a repeatable, stage-by-stage workflow for building full-stack web applications. Each stage has a dedicated skill that Claude runs when invoked. No stage begins until the previous one is approved.
 
-The current application target is **ContractIQ** — an enterprise AI contract review platform for NDA and MSA analysis.
+The current application target is **Trust at the Edge** — an agentic health record ingestion engine that converts heterogeneous and non-standard health feeds into grounded & validated FHIR (Fast Healthcare Interoperability Resources) data, and commits automatically based on evidence, without compromising patient safety or violating consent.
 
 ---
 
@@ -81,9 +81,9 @@ Enforces the brand design system defined in `docs/design.md` on all frontend cod
 
 ---
 
-## Current Project: ContractIQ
+## Current Project: Trust at the Edge
 
-An enterprise AI platform for legal contract review, targeting NDA and MSA documents. The PRD is at `docs/ContractIQ_PRD.md`.
+An agentic health record ingestion engine converting heterogeneous and non-standard health feeds into grounded & validated FHIR (Fast Healthcare Interoperability Resources) data. The PRD is at `docs/Agentic Health Record Ingestion_PRD.docx`.
 
 Tech stack (fixed):
 - **Frontend:** Next.js 14 (App Router)
