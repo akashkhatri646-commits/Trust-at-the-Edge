@@ -45,6 +45,9 @@ Scaffolds a complete Next.js 14 (App Router) project — `package.json`, `next.c
 ### `/design-system`
 Enforces the brand design system defined in `docs/design.md` on all frontend code. Applied automatically whenever any UI component, page, or style is written. Uses Inter for body text, JetBrains Mono for contract content, and `#112E81` as the primary brand color.
 
+### `/azure-ai-foundry`
+Replaces any existing AI provider (OpenAI, Anthropic, etc.) in a Next.js app with an Azure AI Foundry agent. Handles credential collection, client setup, chat route replacement, and frontend migration from streaming to fetch-based chat. Covers all known failure modes so the integration works first time.
+
 ---
 
 ## Key Rules
