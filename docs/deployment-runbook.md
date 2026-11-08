@@ -6,10 +6,10 @@ Do the steps in order. Each ends with a check. Commands run in a terminal opened
 ```bash
 git status
 git commit -m "Add Trust at the Edge MVP app, specs, security pass and Netlify worker"
-git push -u origin release/mvp-pilot
+git push origin main
 ```
 If `git status` says nothing to commit, the commit already exists; run only the push.
-Check: the branch `release/mvp-pilot` appears on GitHub. Open a pull request into `main` and merge it when you are ready to publish (Netlify publishes from the branch you tell it to).
+Check: the commit appears on the `main` branch on GitHub. Netlify publishes from the branch you tell it to (step 6). For later changes, work on a short-lived branch and open a pull request into `main`.
 
 ## 2. Check the database functions on your current (development) project
 This test creates data inside a transaction and ends with an error on purpose, so nothing is kept. Run it while the worker is idle (stop `npm run dev:all`).
@@ -48,8 +48,8 @@ node -e "console.log(require('crypto').randomBytes(24).toString('hex'))"
 ```
 
 ## 6. Create the Netlify site
-1. app.netlify.com → Add new site → Import an existing project → GitHub → pick `dev-os-personal`.
-2. Branch to deploy: `release/mvp-pilot` for the pilot (or `main` after the merge).
+1. app.netlify.com → Add new site → Import an existing project → GitHub → pick `Trust-at-the-Edge`.
+2. Branch to deploy: `main`.
 3. **Base directory: `nextjs-app`.** Build command `npm run build`. Publish directory `.next` (the Next.js plugin from `netlify.toml` handles the rest).
 4. Do not deploy yet if the form allows; add the variables first (step 7). If it deploys and fails, that is fine.
 5. Note the site address (for example `https://something.netlify.app`).
